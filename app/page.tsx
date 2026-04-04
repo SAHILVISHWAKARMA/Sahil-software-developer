@@ -1,0 +1,34 @@
+// TODO: After deployment, run a Lighthouse audit (desktop & mobile) to verify
+// performance, accessibility, best practices, and SEO scores are ≥ 90.
+// Command: npx lighthouse <url> --view  or use Chrome DevTools > Lighthouse tab.
+
+import { Navbar } from '@/components/Navbar';
+import { HeroSection } from '@/components/sections/HeroSection';
+import { AboutSection } from '@/components/sections/AboutSection';
+import { SkillsSection } from '@/components/sections/SkillsSection';
+import { ExperienceSection } from '@/components/sections/ExperienceSection';
+import { ProjectsSection } from '@/components/sections/ProjectsSection';
+import { AchievementsSection } from '@/components/sections/AchievementsSection';
+import { ContactSection } from '@/components/sections/ContactSection';
+
+export default function Home() {
+  return (
+    <>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ExperienceSection />
+        <ProjectsSection />
+        <AchievementsSection />
+        <ContactSection />
+      </main>
+      <footer className="py-8 text-center text-sm text-[var(--muted)] border-t border-[var(--border)]">
+        <p>© {new Date().getFullYear()} Sahil Vishwakarma. Built with Next.js &amp; Tailwind CSS.</p>
+      </footer>
+    </>
+  );
+}
