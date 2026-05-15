@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST='{"components\\\\ui\\\\ContactForm.tsx -> @emailjs/browser":{"id":1572,"files":["static/chunks/572.9a9cdbac275a5bdf.js"]}}';
+self.__REACT_LOADABLE_MANIFEST="{\"components\\\\ui\\\\ContactForm.tsx -> @emailjs/browser\":{\"id\":\"components\\\\ui\\\\ContactForm.tsx -> @emailjs/browser\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_emailjs_browser_es_index_js.js\"]}}"
