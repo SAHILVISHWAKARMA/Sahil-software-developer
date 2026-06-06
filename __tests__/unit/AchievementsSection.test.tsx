@@ -19,6 +19,6 @@ describe('AchievementsSection', () => {
     expect(screen.getByText('Performance Optimization')).toBeTruthy();
     expect(screen.getByText('Critical Workflow Resolution')).toBeTruthy();
     expect(screen.getByText('Edge Case Identification')).toBeTruthy();
-    expect(screen.getByText('Complex Debugging')).toBeTruthy();
+    expect(screen.getByText('Regression Troubleshooting')).toBeTruthy();
   });
 });

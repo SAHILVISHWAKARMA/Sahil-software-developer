@@ -5,19 +5,19 @@ export interface Achievement {
 
 export const achievements: Achievement[] = [
   {
-    title: 'Performance Optimization',
-    description: 'Improved system performance by optimizing SQL queries, reducing load times by up to 60%.',
-  },
-  {
     title: 'Critical Workflow Resolution',
-    description: 'Resolved critical workflow issues in the PAT system that were blocking financial approvals.',
+    description: 'Resolved critical workflow defects impacting scheduling processes, restoring system stability under tight deadlines.',
   },
   {
     title: 'Edge Case Identification',
-    description: 'Identified and fixed edge cases in production that were causing intermittent data inconsistencies.',
+    description: 'Identified edge cases in UI and backend integrations to prevent data loss across tenant environments.',
   },
   {
-    title: 'Complex Debugging',
-    description: 'Debugged complex multi-layer issues spanning frontend, backend, and database tiers.',
+    title: 'Regression Troubleshooting',
+    description: 'Performed environment comparisons to troubleshoot and isolate release-specific regression issues.',
+  },
+  {
+    title: 'Performance Optimization',
+    description: 'Improved application responsiveness through targeted database indexing and API-level caching strategies.',
   },
 ];

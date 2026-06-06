@@ -16,7 +16,7 @@ vi.mock('@/hooks/useScrollAnimation', () => ({
 describe('ProjectsSection', () => {
   it('renders all 3 project titles', () => {
     render(<ProjectsSection />);
-    expect(screen.getByText('Automotive CRM Platform')).toBeTruthy();
+    expect(screen.getByText('Multi-Tenant SaaS Platform')).toBeTruthy();
     expect(screen.getByText('Field Service Suite (FSS)')).toBeTruthy();
     expect(screen.getByText('Payables Approval & Tracking (PAT)')).toBeTruthy();
   });

@@ -16,16 +16,22 @@ export const skillCategories: SkillCategory[] = [
       { name: 'ReactJS', level: 90 },
       { name: 'TypeScript', level: 85 },
       { name: 'JavaScript', level: 90 },
+      { name: 'Reusable Component Design', level: 85 },
+      { name: 'State Management', level: 80 },
+      { name: 'Responsive UI Design', level: 85 },
       { name: 'Bootstrap', level: 75 },
     ],
   },
   {
     category: 'Backend',
     skills: [
+      { name: 'C#', level: 85 },
       { name: '.NET Core', level: 85 },
       { name: 'ASP.NET Core', level: 85 },
-      { name: 'REST APIs', level: 90 },
+      { name: 'EF Core & LINQ', level: 80 },
+      { name: 'RESTful API Design', level: 90 },
       { name: 'JWT Authentication', level: 80 },
+      { name: 'SOLID Principles & DI', level: 85 },
     ],
   },
   {
@@ -33,15 +39,17 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'SQL Server', level: 85 },
       { name: 'Query Optimization', level: 80 },
-      { name: 'Indexing', level: 75 },
+      { name: 'Indexing Strategies', level: 75 },
+      { name: 'Stored Procedures', level: 80 },
     ],
   },
   {
     category: 'Tools',
     skills: [
       { name: 'Git', level: 90 },
-      { name: 'JIRA', level: 80 },
-      { name: 'Agile', level: 85 },
+      { name: 'JIRA & Agile', level: 85 },
+      { name: 'Azure Cloud Services', level: 85 },
+      { name: 'Unit & Integration Testing', level: 80 },
     ],
   },
 ];

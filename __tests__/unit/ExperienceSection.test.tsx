@@ -26,11 +26,11 @@ describe('ExperienceSection', () => {
 
   it('renders role title', () => {
     render(<ExperienceSection />);
-    expect(screen.getByText('Full Stack Software Developer')).toBeTruthy();
+    expect(screen.getByText('Software Developer')).toBeTruthy();
   });
 
   it('renders achievements', () => {
     render(<ExperienceSection />);
-    expect(screen.getByText(/30\+ REST APIs/i)).toBeTruthy();
+    expect(screen.getByText(/30\+ RESTful APIs/i)).toBeTruthy();
   });
 });

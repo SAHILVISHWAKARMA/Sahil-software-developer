@@ -2,7 +2,12 @@
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
-const strengths = ['Problem-solving', 'Debugging complex systems', 'Working with legacy code', 'Writing maintainable code'];
+const strengths = [
+  'Strong debugging and problem-solving in complex distributed systems',
+  'Comfortable modernizing legacy codebases incrementally',
+  'Focus on code correctness, maintainability, and production stability',
+  'Effective communicator in technical discussions, PR reviews, and issue analysis',
+];
 
 export function AboutSection() {
   const { ref, controls, variants } = useScrollAnimation();

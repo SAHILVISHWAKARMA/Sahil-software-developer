@@ -26,9 +26,9 @@ describe('AboutSection', () => {
 
   it('renders all 4 strengths', () => {
     render(<AboutSection />);
-    expect(screen.getByText('Problem-solving')).toBeTruthy();
-    expect(screen.getByText('Debugging complex systems')).toBeTruthy();
-    expect(screen.getByText('Working with legacy code')).toBeTruthy();
-    expect(screen.getByText('Writing maintainable code')).toBeTruthy();
+    expect(screen.getByText('Strong debugging and problem-solving in complex distributed systems')).toBeTruthy();
+    expect(screen.getByText('Comfortable modernizing legacy codebases incrementally')).toBeTruthy();
+    expect(screen.getByText('Focus on code correctness, maintainability, and production stability')).toBeTruthy();
+    expect(screen.getByText('Effective communicator in technical discussions, PR reviews, and issue analysis')).toBeTruthy();
   });
 });
