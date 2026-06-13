@@ -2,9 +2,7 @@ import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import { ContactForm } from '@/components/ui/ContactForm';
 
-vi.mock('@emailjs/browser', () => ({
-  send: vi.fn().mockResolvedValue({ status: 200 }),
-}));
+vi.stubGlobal('open', vi.fn());
 
 describe('ContactForm', () => {
   it('shows error messages on empty submit', async () => {

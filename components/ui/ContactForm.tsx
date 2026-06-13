@@ -50,14 +50,19 @@ export function ContactForm() {
     }
     setStatus('loading');
     try {
-      // EmailJS integration — replace with your service/template/public key
-      const emailjs = await import('@emailjs/browser');
-      await emailjs.send(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? 'YOUR_SERVICE_ID',
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? 'YOUR_TEMPLATE_ID',
-        { from_name: form.name, from_email: form.email, message: form.message },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? 'YOUR_PUBLIC_KEY'
-      );
+      const text = `Hello Sahil,
+
+My name is ${form.name}.
+My email is ${form.email}.
+
+Message:
+${form.message}`;
+
+      const encodedText = encodeURIComponent(text);
+      const whatsappUrl = `https://wa.me/916260737282?text=${encodedText}`;
+      
+      window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+      
       setStatus('success');
       setForm({ name: '', email: '', message: '' });
     } catch {
